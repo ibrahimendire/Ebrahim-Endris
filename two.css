@@ -1,94 +1,51 @@
-body{
-    background:rgb(234, 237, 229);
-    
-}
-#tb{
-   background-color: rgb(108, 116, 116);
-   width: 15rem;
-    height: 2rem;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 30px;
-}
-#tableHead{
-    background: rgb(52, 138, 167);
-    border-color: rgb(21, 17, 17);
-    width: 15rem;
-     height: 2rem;
-     border: 1px solid black;
-     text-align: center;
-  }
-  #cell{
-    border: 1px solid black;
-     text-align: center;
-  }
-#profile{
-    position:fixed;
-    left:end;
-    right: 0;
-    text-align: end;
-    top: 0;
-    width: 80px;
-}
-#about{
-    text-align: center;  
-    font-style: oblique;
-    font-size: 50px;
-   border:1px solid black;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    margin-right: 400px;
-    margin-left: 500px;
-}
-#born{
-    text-align: left;  
-    font-style: italic;
-    font-size: 50px;
-    margin-bottom:0px;
-    
-}
-#education{
-    text-align: left;  
-    font-style: italic;
-    font-size: 50px;
-    margin-bottom:0px;
-    
-}
-#work{
-    text-align: left;  
-    font-style: italic;
-    font-size: 50px;
-    margin-bottom:0px;
-}
-#contact{
-    text-align: left;  
-    font-style: italic;
-    font-size: 50px;
-}
-#follow{
-    text-align: right;  
-    font-style: italic;
-    font-size: 20px;
-}
-.para {
-    font-size : 28px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-    margin-left:20px;
-    background-color: lightblue;
-    border-radius:10px;
-}
- 
-#photo{
-    width: 280px; 
-    height:260px ;
-    margin-left:20px
-    
+html {
+  font-size: 10px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
 }
 
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 
-#fig {
-    text-align: center;
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
 }
